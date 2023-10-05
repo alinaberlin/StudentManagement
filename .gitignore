@@ -4,6 +4,8 @@ target/
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
+*.jar
+*.class
 .idea/
 *.iws
 *.iml

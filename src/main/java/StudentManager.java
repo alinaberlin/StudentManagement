@@ -17,13 +17,18 @@ public class StudentManager implements Searcheable{
 
     @Override
     public Student search(String name) {
+        //for(Student student:students) simple way to refactor in one line
+//        List<Student> students = new ArrayList<>();
+//        students.add(new Student("Alalala"));
+//        students.add(new Student("PacPac"));
+//        students.stream().filter(s -> s.getName().equalsIgnoreCase("pacpac"))
+
         for (int i=0; i<students.size(); i++){
             Student student = students.get(i);
-            if (student.getName().toLowerCase().equals(name.toLowerCase()) ){
+            if (student.getName().equalsIgnoreCase(name) ){
                 return student;
             }
         }
-
 
         return null;
     }

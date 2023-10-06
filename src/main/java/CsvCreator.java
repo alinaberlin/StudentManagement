@@ -13,9 +13,9 @@ public class CsvCreator {
         artists.add(new Artist("Gigi", "Musician"));
         StringBuilder builder = new StringBuilder();
         for (Artist artist : artists) {
-            String artistString = String.format("%s, %s", artist.getName(), artist.getType());
+            String artistString = String.format("%s, %s\n", artist.getName(), artist.getType());
             builder.append(artistString);
-            builder.append("\n");
+           // builder.append("\n");
         }
         System.out.println(builder.toString());
         BufferedWriter writer = new BufferedWriter(new FileWriter("artists.csv"));

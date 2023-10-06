@@ -21,7 +21,8 @@ public class StudentManager implements Searcheable{
 //        List<Student> students = new ArrayList<>();
 //        students.add(new Student("Alalala"));
 //        students.add(new Student("PacPac"));
-//        students.stream().filter(s -> s.getName().equalsIgnoreCase("pacpac"))
+
+
 
         for (int i=0; i<students.size(); i++){
             Student student = students.get(i);
